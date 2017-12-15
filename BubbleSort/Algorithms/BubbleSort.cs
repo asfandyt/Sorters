@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace BubbleSort.Algorithms
 {
@@ -11,15 +9,17 @@ namespace BubbleSort.Algorithms
 
         public BubbleSort()
         {
-            this.List = new int[]{};
-            this.OrderBy = true;
+            List = new int[]{};
+            OrderBy = true;
         }
 
+        // Sort integers in ascending order
         public int[] SortIntAsc(int[] list)
         {
-            return new int[]{};
+           return new int[]{};
         }
 
+        // Sort integers in descending order
         public int[] SortIntDesc(int[] list)
         {
             return new int[] {};
