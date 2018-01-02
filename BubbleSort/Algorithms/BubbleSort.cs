@@ -1,8 +1,10 @@
 ﻿
 
-namespace BubbleSort.Algorithms
+using System;
+
+namespace Sort.Algorithms
 {
-    class BubbleSort
+    public class BubbleSort
     {
         public int[] List { get; set; }
         public bool OrderBy { get; set; }
@@ -14,16 +16,56 @@ namespace BubbleSort.Algorithms
         }
 
         // Sort integers in ascending order
-        public int[] SortIntAsc(int[] list)
+        public void SortIntAsc()
         {
-           return new int[]{};
+            
+            for (int i = 0; i < List.Length; i++) {
+
+                for (int j = i + 1; j < List.Length; j++) {
+
+                    if (List[i] > List[j])
+                    {
+                        int right = List[j];
+                        List[j] = List[i];
+                        List[i] = right;
+
+                    }
+
+                }
+
+            }
         }
 
         // Sort integers in descending order
-        public int[] SortIntDesc(int[] list)
+        public void SortIntDesc()
         {
-            return new int[] {};
+            for (int i = List.Length - 1; i >= 0; i--)
+            {
+                for (int j = i - 1; j >= 0; j--)
+                {
+                    if (List[i] > List[j])
+                    {
+                        int right = List[i];
+                        List[i] = List[j];
+                        List[j] = right;
+                    }
+                }
+            }
         }
+
+        // Print the list please
+        public void PrintTheList()
+        {
+            foreach (var item in List)
+            {
+                Console.Write(item + ", ");
+            }
+        }
+
+        //I have the best wifey in the worlds
+
+
+
 
     }
 }

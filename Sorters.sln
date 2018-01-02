@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{224973C3-F441-427A-95A8-C19F21FAD953}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sort", "BubbleSort\Sort.csproj", "{224973C3-F441-427A-95A8-C19F21FAD953}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
